@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/another/Dropbox/rails_work/bv3/app/views/library'
+let g:netrw_dirhist_2='/home/another/Dropbox/rails_work/bv3/public/stylesheets'
+let g:netrw_dirhist_3='/home/another/Dropbox/rails_work/bv3/app/assets/stylesheets/bootstrap'
+let g:netrw_dirhist_4='/home/another/Dropbox/rails_work/bv3/.git'
