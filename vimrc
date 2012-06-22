@@ -1,7 +1,13 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-call pathogen#infect()
-syntax on
+call pathogen"runtime_append_all_bundles()
+call pathogen"helptags()
+call pathogen"infect()
+
+" syntax & highlighting
+syntax on		" enable colours
+set hlsearch		" highlight search
+set incsearch		" search incremently
+
+" Use of filetype plugins, auto completion and indentation support
 filetype plugin indent on
 
 " Load matchit (% to bounce from do to end, etc.)
@@ -16,29 +22,36 @@ augroup myfiletypes
 
 set nocompatible
 "------------------------
-set cf " Enable error files & error jumping.
-set clipboard=unnamed "Yanks go on clipboard instead.
-set history=256 "Number of things to remember in history.
-set autowrite " Writes on make/shell commands
-set ruler " Ruler on
-set nu " Line numbers on
-set nowrap " Line wrapping off
-set timeoutlen=1000  " Time to wait after ESC (default causes an annoying delay)
-" colorscheme desert  " Uncomment this to set a default theme
+set cf 			" Enable error files & error jumping.
+set clipboard=unnamed 	" Yanks go on clipboard instead.
+set history=256 	" Number of things to remember in history.
+set autowrite 		" Writes on make/shell commands
+set ruler 		" Ruler on
+set nu 			" Line numbers on
+set nowrap 		" Line wrapping off
+set timeoutlen=1000  	" Time to wait after ESC (default causes an annoying delay)
+colorscheme desert  	" Uncomment this to set a default theme
 
 " Visual
-set showmatch  " Show matching brackets.
-set mat=5  " Bracket blinking.
+set showmatch  		" Show matching brackets.
+set mat=5  		" Bracket blinking.
+set title		" show file in titlebar
+set matchpairs+=<:>	" specially for html
+
+" editor settings
+set ignorecase		" case insensitive searching
+set smartcase		" becomes case sensitive if uppercase used
+
 " set list
 " Show $ at end of line and trailing space as ~
 set lcs=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
-" set novisualbell  " No blinking .
-" set noerrorbells  " No noise.
-set laststatus=2  " Always show status line.
+" set novisualbell  	" No blinking .
+" set noerrorbells  	" No noise.
+set laststatus=2  	" Always show status line.
  
 " gvim specific
-set mousehide  " Hide mouse after chars typed
-set mouse=a  " Mouse in all modes
+set mousehide  		" Hide mouse after chars typed
+set mouse=a  		" Mouse in all modes
 "-------------------------
 winsize 104 72
 "colorscheme desert
