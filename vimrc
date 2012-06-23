@@ -1,6 +1,6 @@
-call pathogen"runtime_append_all_bundles()
-call pathogen"helptags()
-call pathogen"infect()
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+call pathogen#infect()
 
 " syntax & highlighting
 syntax on		" enable colours
